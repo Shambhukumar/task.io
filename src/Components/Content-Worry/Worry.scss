@@ -1,0 +1,53 @@
+.Worry{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    &-container{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: relative;
+        border-radius: 50px;
+        background-color: rgba(231, 225, 225, 0.63);
+        width: 80vw;;
+        height: 90%;
+        &-text{
+            flex-direction: column;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            p{
+                margin-top: 10px;
+                width: 50%;
+                font-size: 1.2rem;
+            }
+        }
+        &-art{
+            z-index: 50;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 10px 20px ;
+            position: absolute;
+            width: 17rem;
+            &-1{
+                top: 0%;
+                left: 0%;
+                transform: rotate(-20deg);
+            }
+            &-2{
+                top: 0%;
+                right: 0%;
+                transform: rotate(20deg);
+            }
+            &-3{
+                bottom: 5%;
+                left: 0%;
+                transform: rotate(30deg);
+            }
+            &-4{
+                bottom: 5%;
+                right: 0%;
+                transform: rotate(-30deg);
+            }
+        }
+    }
+}
