@@ -1,0 +1,196 @@
+.Landing{
+    // overflow: hidden;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+
+
+    
+&-content{
+
+    z-index: 9;
+    margin-top: 10px;
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // overflow: hidden;
+    &-right{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+        &-hero{
+            font-size: 5rem;
+        }
+        &-peragraph{
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: rgb(105, 105, 105);
+        }
+        &-buttons{
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-start;
+            &-started,&-video{
+                cursor: pointer;
+                padding: 15px 20px;
+                
+            }
+            &-started{
+                color: rgb(241, 241, 241);
+                background-color: rgb(15, 101, 199);
+                margin-right: 5px;
+                border-radius: 30px;
+            }
+        }
+    }
+   &-left{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    &-house{
+        border-radius: 50rem 50rem 50px 50px;
+        position: absolute;
+        width: 35%;
+        height: 80%;
+        filter: blur(1px);
+        background-color: #a3a3a3;
+        background-image: linear-gradient(315deg, #d6c2c2 0%, #a5bdbc 74%);
+    }
+   
+    &-image{
+        
+        height: auto;
+        width: 100%;
+        
+        position: relative;
+        &-hand{
+            z-index: 10;
+            position: absolute;
+            width: 40%;
+            top: 40%;
+            right: 0%;
+       
+        }
+        &-mobile-tilt{
+            z-index: 2;
+            top: 5%;
+            right: 30%;
+            position: absolute;
+            animation: float linear 4s infinite;
+            width: 55%;
+        }
+        &-mobile-flat{
+            position: absolute;
+            width: 55%;
+            top: 14%;
+            right: 30%;
+            &-img{
+            animation: float-flat linear 3s infinite;
+            width: 100%;
+            perspective: 50px;
+            }
+            
+        }
+        &-bulb{
+                position: absolute;
+                z-index: 15;
+                animation: bulb-float linear 4s;
+                animation-iteration-count: infinite;
+                background-color:rgb(253, 235, 175);
+                width: 2rem;
+                height: 2rem;
+                border-radius:50px;
+                box-shadow: 0 0 30px #fae586, inset 0 0 30px #fae586;
+                &-1{
+                    top: 50%;
+                }
+                &-2{
+                    width: 3rem;
+                    height: 3rem;
+                    bottom: 70%;
+                    right: 40%;
+                }
+                &-3{
+                    width: 4rem;
+                    height: 4rem;
+                    top: 20%;
+                    left: 10%;
+                }
+                &-4{
+                    top: 20%;
+                    left: 70%;
+                }
+                
+        }
+        &-chat{
+            bottom: 10%;
+            left: 25%;
+            width: 60%;
+            // width: 95%;
+          position: absolute;
+            &-joined{
+                padding: 4px 5px;
+                margin-bottom: 5px;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                background-image: linear-gradient(315deg, #fffefe6c 0%, #ffffff 50%);
+                img{
+                    margin-right: 10%;
+                    object-fit: cover;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+                &-2{
+                    
+                    margin: 0px 15px;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+}
+}
+
+@keyframes bulb-float {
+	0% {
+		transform: translateY(5px);
+	}
+	50% {
+		transform: translateY(-5px);
+	}
+	100% {
+		transform: translateY(5px);
+	}
+}
+@keyframes float {
+	0% {
+		transform: translatey(10px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(10px);
+	}
+}
+@keyframes float-flat {
+	0% {
+		transform: translateY(10px) rotateX(40deg);
+	}
+	50% {
+		transform: translateY(-10px)  rotateX(40deg);
+	}
+	100% {
+		transform: translateY(10px) rotateX(40deg);
+	}
+}
