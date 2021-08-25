@@ -1,0 +1,34 @@
+.Pricing{
+    // width: 80vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-Card{
+        transition: all 0.2s ease;
+                margin: 5px;
+                border-radius: 30px;
+                background-color: white;
+                &-1{
+                z-index: 1;
+                transform: scale(1.1);
+                }
+
+                &:hover{
+                    // z-index: 2;
+                    color: rgb(12, 56, 16);
+                    background-color: lightgreen;
+                }
+                
+           
+            
+        
+        // &:hover{
+        //     // z-index: 1;
+        //     transform: scale(1.1);
+        // }
+
+    }
+
+}
