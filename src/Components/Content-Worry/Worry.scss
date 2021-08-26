@@ -28,8 +28,9 @@
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             padding: 10px 20px ;
             position: absolute;
-            width: 17rem;
+            max-width: 25%;
             &-1{
+                z-index: 20;
                 top: 0%;
                 left: 0%;
                 transform: rotate(-20deg);
@@ -40,6 +41,7 @@
                 transform: rotate(20deg);
             }
             &-3{
+                z-index: 0;
                 bottom: 5%;
                 left: 0%;
                 transform: rotate(30deg);

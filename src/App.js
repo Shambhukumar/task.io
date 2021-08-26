@@ -1,4 +1,5 @@
 import './App.scss';
+import Features from './Components/Content-Features/Features';
 import Pricing from './Components/Content-Pricing/Pricing';
 import Worry from './Components/Content-Worry/Worry';
 import Landing from "./Components/Landing/Landing";
@@ -12,6 +13,7 @@ function App() {
     
       </div>
       <Worry/>
+      <Features/>
       <Pricing/>
     </div>
   );
