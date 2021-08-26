@@ -31,17 +31,17 @@ const Landing = (props) => {
             <span className="Landing-content-left-image-bulb Landing-content-left-image-bulb-2"></span>
             <span className="Landing-content-left-image-bulb Landing-content-left-image-bulb-3"></span>
             <span className="Landing-content-left-image-bulb Landing-content-left-image-bulb-4"></span>
-            <img className="Landing-content-left-image-mobile-tilt" src="/images/mobile-tilt.png" alt="mobile"/>
-            <span className="Landing-content-left-image-mobile-flat"> <img className="Landing-content-left-image-mobile-flat-img" src="/images/mobile-tilt.png" alt="mobile"/></span>
+            <img className="Landing-content-left-image-mobile-tilt" src="/mobile-tilt.png" alt="mobile"/>
+            <span className="Landing-content-left-image-mobile-flat"> <img className="Landing-content-left-image-mobile-flat-img" src="/mobile-tilt.png" alt="mobile"/></span>
             <div className="Landing-content-left-image-chat">
-                <span className="Landing-content-left-image-chat-joined Landing-content-left-image-chat-joined-1"><img src="/images/face-1.jpg" alt="face"/> <span>Kohaku happed into the app</span></span>
-                <span className="Landing-content-left-image-chat-joined Landing-content-left-image-chat-joined-2"><img src="/images/face-2.jpg" alt="face"/> <span>Moyo happed into the app</span></span>
+                <span className="Landing-content-left-image-chat-joined Landing-content-left-image-chat-joined-1"><img src="/face-1.jpg" alt="face"/> <span>Kohaku happed into the app</span></span>
+                <span className="Landing-content-left-image-chat-joined Landing-content-left-image-chat-joined-2"><img src="/face-2.jpg" alt="face"/> <span>Moyo happed into the app</span></span>
             </div>
             
            </div>
            </div>
            </div>
-           <img className="Landing-content-left-image-hand" src="/images/hand.png" alt="hand"/>
+           <img className="Landing-content-left-image-hand" src="/hand.png" alt="hand"/>
         </div>
     )
 }

@@ -18,7 +18,7 @@ const Card = (props) => {
       },[])
     const {data} = props;
     return (<div data-aos={data.aosClass} className={`Features-Card  Features-Card-${data.class}`}>
-        <img src={`/images/features/${data.class}.jpg`} alt={data.Name} />
+        <img src={`/${data.class}.jpg`} alt={data.Name} />
         <span>
             {data.Name}
         </span>
