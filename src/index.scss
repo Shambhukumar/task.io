@@ -85,7 +85,7 @@ html,body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 body {
   overflow: overlay;
@@ -95,6 +95,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  font-weight: 600;
+ 
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -110,6 +113,14 @@ body {
   background: rgba(0, 0, 0, 0);
 }
 
+body,html{
+  @media (max-width: 1300px){
+    font-size: 14px;
+  }
+  @media (max-width: 1300px){
+    font-size: 12px;
+  }
+}
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

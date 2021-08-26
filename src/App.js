@@ -6,6 +6,7 @@ import Features from './Components/Content-Features/Features';
 import Pricing from './Components/Content-Pricing/Pricing';
 import Worry from './Components/Content-Worry/Worry';
 import Landing from "./Components/Landing/Landing";
+import Footer from './Components/Footer/Footer';
 
 const App = () => {
   useEffect(()=>{
@@ -29,6 +30,7 @@ const App = () => {
       
       <Pricing/>
       </div>
+      <Footer/>
     </div>
   );
 }

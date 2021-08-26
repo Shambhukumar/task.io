@@ -1,17 +1,14 @@
 .Features{
-    margin: 5% 0%;
-    height: 100vh;
+    margin-top: 5%;
+    // height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     &-container{
         width: 80%;
         display: flex;
-        // justify-content: space-around;
         flex-direction: column;
         align-items: center;
-        height: 100%;
-        // flex-direction: row;
     &-art,&-art-2{
         display: flex;
         justify-content: space-between;
