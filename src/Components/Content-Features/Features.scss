@@ -1,5 +1,5 @@
 .Features{
-    margin: 50px 0px;
+    margin: 5% 0%;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -56,14 +56,18 @@
         }
         
         &-development{
-            transform: translateY(70%);
+            margin-top: 5%;
         }
         &-cloud{
-            transform: translateY(50%);
+            margin-top: 5%;
         }
         &-marketing{
-            transform: translateY(100%);
+            margin-top: 10%;
         }
     }
     
 }
+
+// @keyframes fade {
+    
+// }

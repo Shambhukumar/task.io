@@ -1,18 +1,19 @@
 .Pricing{
     // width: 80vw;
+    margin: 5% 0%;
     height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
     &-Card{
-        transition: all 0.2s ease;
+        transition: all 1.5s ease !important;
                 margin: 5px;
                 border-radius: 30px;
                 background-color: white;
                 &-1{
                 z-index: 1;
-                transform: scale(1.1);
+                transform: scale(1.1) !important;
                 }
 
                 &:hover{

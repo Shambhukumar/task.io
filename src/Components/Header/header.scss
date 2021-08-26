@@ -19,9 +19,13 @@
             }
             &-logo{
                 font-weight: 600;
-                font-size: 2rem;
+                font-size: 3rem;
                 &-dot{
                     color: rgb(255, 153, 0);
+                }
+                &:hover{
+                    cursor: pointer;
+                    color: black !important;
                 }
             }
             list-style: none;

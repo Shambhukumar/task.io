@@ -1,16 +1,23 @@
-import React from 'react'
 import "./Features.scss"
+import  {useEffect} from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
 const CardArr = [
-        { Name: "Web Design", class: "designing" }, 
-        { Name: "Development", class: "development" },
-        { Name: "Branding", class: "branding"},
-        { Name: "Cloud Service", class: "cloud" },
-        { Name: "Marketing", class: "marketing" }
+        { Name: "Web Design", class: "designing", aosClass: "fade-right" }, 
+        { Name: "Development", class: "development", aosClass: "fade-up-left" },
+        { Name: "Branding", class: "branding", aosClass: "fade-right"},
+        { Name: "Cloud Service", class: "cloud", aosClass: "fade-up" },
+        { Name: "Marketing", class: "marketing", aosClass: "fade-left" }
     ];
 
 const Card = (props) => {
+    useEffect(()=>{
+        Aos.init({
+          duration: 2000
+        })
+      },[])
     const {data} = props;
-    return (<div className={`Features-Card  Features-Card-${data.class}`}>
+    return (<div data-aos={data.aosClass} className={`Features-Card  Features-Card-${data.class}`}>
         <img src={`/images/features/${data.class}.jpg`} alt={data.Name} />
         <span>
             {data.Name}
@@ -22,7 +29,7 @@ const Features = (props) => {
         <div className="Features">
             <div className="Features-container">
                 <div className="Features-container-art">
-                    <div className="Features-container-art-text">
+                    <div data-aos="fade-right" className="Features-container-art-text">
                         <div>
                             <h3>task.io</h3>
                         </div>
