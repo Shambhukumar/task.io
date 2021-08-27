@@ -26,7 +26,7 @@ const Card = (props) => {
 }
 const Features = (props) => {
     return (
-        <div className="Features">
+        <div className="Features" id="features">
             <div className="Features-container">
                 <div className="Features-container-art">
                     <div data-aos="fade-right" className="Features-container-art-text">

@@ -3,7 +3,7 @@ import "./Worry.scss"
 
 const Worry = () => {
     return (
-        <section className="Worry">
+        <section className="Worry" id="worry">
             <div className="Worry-container">
             <div className="Worry-container-text">
                 <span>No Need To Worry</span>

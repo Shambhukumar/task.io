@@ -13,7 +13,7 @@ const Pricing = () => {
         })
       },[])
     return (
-        <section className="Pricing">
+        <section className="Pricing" id="pricing">
             {arr.map((e,el)=>{
                 return <div data-aos={e.aosClass} className={`Pricing-Card Pricing-Card-${el}`}><Card/></div>
             })}
