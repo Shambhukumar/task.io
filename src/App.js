@@ -1,4 +1,4 @@
-import  {useEffect} from 'react';
+import  {useEffect, Suspense} from 'react';
 import Aos from "aos";
 import './App.scss';
 import "aos/dist/aos.css";
@@ -16,6 +16,7 @@ const App = () => {
   },[])
   return (
     <div className="App">
+      <Suspense fallback={<div>Loading</div>}>
       <span className="App-background"></span>
       <div className="App-land">
       <Landing/>
@@ -31,6 +32,7 @@ const App = () => {
       <Pricing/>
       </div>
       <Footer/>
+      </Suspense>
     </div>
   );
 }
